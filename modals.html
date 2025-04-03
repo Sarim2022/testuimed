@@ -1,0 +1,100 @@
+<!-- Water Intake Modal -->
+<div id="water-modal" class="modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-content form-modal">
+        <h2>Set Water Intake</h2>
+        <form id="water-form">
+            <div class="form-group">
+                <label>Glasses per Day</label>
+                <select name="glasses" required>
+                    <option value="">Select number of glasses</option>
+                    <option value="1">1 glass</option>
+                    <option value="2">2 glasses</option>
+                    <option value="3">3 glasses</option>
+                    <option value="4">4 glasses</option>
+                    <option value="5">5 glasses</option>
+                    <option value="6">6 glasses</option>
+                    <option value="7">7 glasses</option>
+                    <option value="8">8 glasses</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Reminder Time</label>
+                <input type="time" name="reminder-time" required>
+            </div>
+            <div class="form-group">
+                <label>Repeat on Days</label>
+                <div class="days-selector">
+                    <label><input type="checkbox" name="days" value="sun"> Sun</label>
+                    <label><input type="checkbox" name="days" value="mon"> Mon</label>
+                    <label><input type="checkbox" name="days" value="tue"> Tue</label>
+                    <label><input type="checkbox" name="days" value="wed"> Wed</label>
+                    <label><input type="checkbox" name="days" value="thu"> Thu</label>
+                    <label><input type="checkbox" name="days" value="fri"> Fri</label>
+                    <label><input type="checkbox" name="days" value="sat"> Sat</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Date Range</label>
+                <div class="date-range">
+                    <input type="date" name="start-date" required>
+                    <span>to</span>
+                    <input type="date" name="end-date" required>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn" onclick="addTask(document.getElementById('taskName').value, document.getElementById('taskTime').value)">Add Reminder</button>
+            <button type="button" class="cancel-btn">Cancel</button>
+        </form>
+    </div>
+</div>
+
+<!-- Medicine Reminder Modal -->
+<div id="medicine-modal" class="modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-content form-modal">
+        <h2>Set Medicine Reminder</h2>
+        <form id="medicine-form">
+            <div class="form-group">
+                <label>Medicine Name</label>
+                <input type="text" name="medicine-name" placeholder="Enter medicine name" required>
+            </div>
+            <div class="form-group">
+                <label>Dosage</label>
+                <div class="dosage-input">
+                    <input type="number" name="dosage-amount" min="1" required>
+                    <select name="dosage-type" required>
+                        <option value="pills">Pills</option>
+                        <option value="drops">Drops</option>
+                        <option value="ml">ml</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Reminder Time</label>
+                <input type="time" name="reminder-time" required>
+            </div>
+            <div class="form-group">
+                <label>Repeat on Days</label>
+                <div class="days-selector">
+                    <label><input type="checkbox" name="days" value="sun"> Sun</label>
+                    <label><input type="checkbox" name="days" value="mon"> Mon</label>
+                    <label><input type="checkbox" name="days" value="tue"> Tue</label>
+                    <label><input type="checkbox" name="days" value="wed"> Wed</label>
+                    <label><input type="checkbox" name="days" value="thu"> Thu</label>
+                    <label><input type="checkbox" name="days" value="fri"> Fri</label>
+                    <label><input type="checkbox" name="days" value="sat"> Sat</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Date Range</label>
+                <div class="date-range">
+                    <input type="date" name="start-date" required>
+                    <span>to</span>
+                    <input type="date" name="end-date" required>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn" onclick="addTask(document.getElementById('taskName').value, document.getElementById('taskTime').value)">Set Medicine</button>
+            <button type="button" class="cancel-btn">Cancel</button>
+        </form>
+    </div>
+</div>

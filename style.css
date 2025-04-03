@@ -1,0 +1,148 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.phone-container {
+    width: 390px;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.content {
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 38px;
+    margin-bottom: 1px;
+    margin-top: 40px;
+}
+
+.app-name {
+    color: #d4d401;
+    font-weight: bold;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 16px;
+    margin: 20px 0 40px;
+    line-height: 1.5;
+}
+
+.main-image {
+    width: 200px;
+    height: auto;
+    margin: 40px 0;
+}
+
+.get-started-btn {
+    background-color: #00BFA5;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: auto;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.get-started-btn::after {
+    content: '→';
+    margin-left: 10px;
+}
+
+.get-started-btn:hover {
+    background-color: #00A896;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.forgot-link {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.forgot-link a {
+    color: #00BFA5;
+    text-decoration: none;
+}
+
+.forgot-link a:hover {
+    text-decoration: underline;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 16px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+}
+
+.password-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.toggle-password img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+}
+
+.signup-link {
+    margin-top: 20px;
+    color: #666;
+}
+
+.signup-link a {
+    color: #00BFA5;
+    text-decoration: none;
+}
+
+.login-btn::after {
+    content: none;
+}
